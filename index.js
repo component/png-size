@@ -1,30 +1,32 @@
 
 /**
- * Module dependencies.
+ * Expose `size`.
  */
 
-var File = require('file');
+module.exports = size;
 
 /**
- * Read dimensions from PNG `file` and invoke `fn(err, w, h)`.
+ * Uint32BE.
+ */
+
+function u32(buf, o) {
+  return buf[o] << 24
+    | buf[o + 1] << 16
+    | buf[o + 2] << 8
+    | buf[o + 3];
+}
+
+/**
+ * Return dimensions from png `buf`.
  *
- * @param {File|Blob} file
- * @param {Function} fn
+ * @param {Buffer} buf
+ * @return {Object}
  * @api public
  */
 
-module.exports = function(file, fn){
-  File(file).toArrayBuffer(function(err, buf){
-    if (err) return fn(err);
-    try {
-      var off = 16;
-      var view = new DataView(buf);
-      var w = view.getUint32(off, false);
-      var h = view.getUint32(off + 4, false);
-    } catch (err) {
-      return fn(err);
-    }
-
-    fn(null, w, h);
-  });
-};
+function size(buf) {
+  return {
+    width: u32(buf, 16),
+    height: u32(buf, 16 + 4)
+  }
+}

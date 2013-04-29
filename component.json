@@ -4,9 +4,7 @@
   "description": "Read PNG dimensions from a File or Blob",
   "version": "0.0.2",
   "keywords": ["png", "dimensions", "image"],
-  "dependencies": {
-    "component/file": "*"
-  },
+  "dependencies": {},
   "development": {},
   "license": "MIT",
   "main": "index.js",

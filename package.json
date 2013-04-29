@@ -3,9 +3,7 @@
   "description": "Read PNG dimensions from a File or Blob",
   "version": "0.0.2",
   "keywords": [],
-  "dependencies": {
-    "file-component": "0.0.2"
-  },
+  "dependencies": {},
   "development": {},
   "license": "MIT",
   "main": "index.js",

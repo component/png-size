@@ -10,10 +10,9 @@
 ## Example
 
 ```js
-var dims = require('png-size');
-dims(file, function(err, w, h){
-
-});
+var size = require('png-size');
+var s = size(buf);
+// => { width: 100, height: 150 }
 ```
 
 ## License
