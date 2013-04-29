@@ -2,7 +2,7 @@
   "name": "png-size",
   "repo": "component/png-size",
   "description": "Read PNG dimensions from a File or Blob",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["png", "dimensions", "image"],
   "dependencies": {
     "component/file": "*"
