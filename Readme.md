@@ -7,9 +7,14 @@
 
     $ component install component/png-size
 
-## API
+## Example
 
-   
+```js
+var dims = require('png-size');
+dims(file, function(err, w, h){
+
+});
+```
 
 ## License
 
