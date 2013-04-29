@@ -1,0 +1,15 @@
+{
+  "name": "png-size-component",
+  "description": "Read PNG dimensions from a File or Blob",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "component": {
+    "scripts": {
+      "png-size/index.js": "index.js"
+    }
+  }
+}
