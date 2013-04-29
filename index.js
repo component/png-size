@@ -18,7 +18,7 @@ module.exports = function(file, fn){
     if (err) return fn(err);
     var off = 16;
     var view = new DataView(buf);
-    var w = view.getUint32(off, false));
+    var w = view.getUint32(off, false);
     var h = view.getUint32(off + 4, false);
     fn(null, w, h);
   });
