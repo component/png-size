@@ -11,5 +11,9 @@
     "scripts": {
       "png-size/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/png-size.git"
   }
 }
